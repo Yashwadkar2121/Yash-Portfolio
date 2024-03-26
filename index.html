@@ -11,126 +11,21 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
     <!-- Devicon -->
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      /* navbar section */
-      nav {
-        background-color: #bd5d38;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 60px;
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-      nav ul li {
-        list-style: none;
-        margin: 0px 25px;
-      }
-
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-      }
-
-      nav ul li a:hover {
-        color: #4c1a06;
-        text-decoration: underline;
-      }
-
-      .left {
-        font-size: 1.5rem;
-        color: white;
-      }
-      .right {
-        margin-top: 15px;
-      }
-
-      /* Section 1 */
-      #firstsection {
-        display: flex;
-        justify-content: space-around;
-        margin: 25px 25px;
-        padding: 25px 25px;
-        align-items: center;
-      }
-
-      #firstsection > div {
-        width: 40%;
-      }
-      .leftsection1 {
-        width: 34px;
-        font-size: 3rem;
-      }
-
-      .rightsection1 > img {
-        width: 80%;
-        margin: 30px 0px;
-      }
-      .orange {
-        color: #bd5d38 !important;
-      }
-      #element {
-        color: #bd5d38 !important;
-      }
-      /* Project Section  */
-      #projects {
-        margin: 25px 25px;
-        padding: 25px 25px;
-      }
-      /* Eduction Section */
-      #education {
-        margin: 25px 25px;
-        padding: 25px 25px;
-      }
-      /* Skills Section */
-      #skills {
-        margin: 25px 25px;
-        padding: 25px 25px;
-      }
-
-      .skills-item > li {
-        list-style: none;
-      }
-      /* Awards Section */
-      #awards {
-        margin: 25px 25px;
-        padding: 25px 25px;
-      }
-      #awards div ul li {
-        list-style: none;
-      }
-    </style>
+    <link rel="stylesheet" href="indes.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <div class="left">Yash's Portfolio</div>
-        <div class="right">
+      <nav class="nav-div">
+        <div>
+          <h2 id="name">Yash's Portfolio</h2>
           <ul>
-            <li><a href="#firstsection">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Educatioin</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -139,62 +34,114 @@
         </div>
       </nav>
     </header>
-
-    <main>
-      <section id="firstsection">
-        <div class="leftsection1">
-          Hi, My name is <span class="orange">Yash</span>
-          <div>and I am a</div>
-          <!-- Element to contain animated typing -->
-          <span id="element"></span>
+    <main id="main">
+      <section id="about">
+        <div class="leftside">
+          <h1>
+            Hi, My name is <span class="orange">Yash</span>
+            <div>and I am a</div>
+            <!-- Element to contain animated typing -->
+            <span id="element"></span>
+          </h1>
+          <h4>
+            <a class="number" href="#">9075425869</a>|<a href=""
+              >Wagholi,Pune</a
+            >
+          </h4>
+          <div>
+            <ul class="contact-details">
+              <li>
+                <a href="">
+                  <img
+                    src="/image/gmail.png"
+                    alt="gmail"
+                    width="45px"
+                    height="45px"
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/Yashwadkar2121"
+                  ><i class="devicon-github-plain colored"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/yash-wadkar-2a2114224/"
+                  ><i class="devicon-linkedin-plain colored"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="rightsection1"><img src="/bg.png" alt="" /></div>
+        <div class="rightside">
+          <img
+            class="webimg"
+            src="image/webimg2.webp"
+            alt="website"
+            width="50%"
+          />
+        </div>
       </section>
       <hr />
       <!-- Project Section -->
       <section id="projects">
         <div>
           <h2>Projects</h2>
-          <div>
-            <div>
-              <h3>Newsapp</h3>
-              <div>
-                <a href="https://github.com/Yashwadkar2121/newsmonkey"
-                  >GitHub Link: -<i class="fa-brands fa-github"></i
-                ></a>
+          <div class="row">
+            <div class="card">
+              <img src="image/inotebook.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">iNotebook</h5>
+                <p class="card-text">
+                  Developed iNotebook, a robust note-taking web application,
+                  utilizing the MERN (MongoDB, Express.js, React.js, Node.js)
+                  stack...
+                  <!-- Implemented features including user authentication,-->
+                  <!-- real-time collaboration, and rich text editing, ensuring a
+                  seamless and efficient note-taking experience. Employed
+                  RESTful APIs for efficient data communication and utilized
+                  MongoDB for scalable data storage. Designed responsive UI/UX
+                  components using React.js for a user-friendly interface.
+                  Integrated various third-party libraries and tools to enhance
+                  functionality and performance. -->
+                </p>
+                <a href="#" class="card-link">View</a>
+                <a href="#" class="card-link">GitHub</a>
               </div>
-              <p>
-                • Developed a dynamic and user-friendly news application
-                utilizing React framework, Bootstrap for responsive design, and
-                integrating News API for real-time news updates.
-                <br />
-                • Demonstrated proficiency in front-end development by creating
-                a feature-rich news application, leveraging React components and
-                Bootstrap's grid system for optimal layout across various
-                devices. <br />
-                • Implemented API integration with News API to fetch and display
-                current news articles, showcasing strong problem-solving skills
-                and attention to detail in delivering a seamless user
-                experience.
-              </p>
             </div>
-          </div>
-
-          <div>
-            <div>
-              <h3>Filpcard Clone</h3>
-              <div>
-                <a href="https://flipcard-home-page.netlify.app/	"
-                  >Project Link: -<i class="fa-solid fa-eye"></i>
-                </a>
+            <div class="card">
+              <img src="image/Newsapi.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Newsapp</h5>
+                <p class="card-text">
+                  Developed a dynamic and user-friendly news application
+                  utilizing React framework, Bootstrap for responsive design,
+                  and integrating..
+                  <!-- News API for real-time news updates. -->
+                </p>
+                <a href="#" class="card-link">View</a>
+                <a href="#" class="card-link">GitHub</a>
               </div>
-              <p>
-                • A flipcard homepage clone using HTML5 and CSS basic properties
-                involves creating a layout where each card flips to reveal
-                content on hover or click. This can be achieved using CSS
-                transitions and transforms to create the flip animation effect,
-                along with HTML structure for the cards and content.
-              </p>
+            </div>
+            <div class="card mx-2">
+              <img src="image/Filipkart.cms" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Filpcard Clone</h5>
+                <p class="card-text">
+                  A flipcard homepage clone using HTML5 and CSS basic properties
+                  involves creating a layout where each card flips to reveal
+                  content...
+                  <!-- on hover or click. -->
+                  <!-- This can be achieved using
+                  CSS transitions and transforms to create the flip animation
+                  effect, along with HTML structure for the cards and content. -->
+                </p>
+                <a
+                  href="https://flipcard-home-page.netlify.app/"
+                  class="card-link"
+                  >View</a
+                >
+                <a href="#" class="card-link">GitHub</a>
+              </div>
             </div>
           </div>
         </div>
@@ -247,33 +194,17 @@
       <section id="skills">
         <div>
           <h2>Skills</h2>
-
           <div>Programming Languages &amp; Tools</div>
           <ul class="skills-item">
-            <li>
-              HTML &nbsp;<i class="devicon-html5-plain-wordmark colored"></i>
-            </li>
-            <li>CSS &nbsp;<i class="devicon-css3-plain colored"></i></li>
-            <li>
-              JavaScript &nbsp;<i class="devicon-javascript-plain colored"></i>
-            </li>
-            <li>
-              Bootstrap &nbsp;<i class="devicon-bootstrap-plain colored"></i>
-            </li>
-            <li>jQuery &nbsp;<i class="devicon-jquery-plain colored"></i></li>
-            <li>
-              React.js &nbsp;<i class="devicon-react-original colored"></i>
-            </li>
-            <li>
-              Node.js &nbsp;<i
-                class="devicon-nodejs-plain-wordmark colored"
-              ></i>
-            </li>
-            <li>
-              NPM &nbsp;<i class="devicon-npm-original-wordmark colored"></i>
-            </li>
-            <li>VS- Code &nbsp;<i class="devicon-vscode-plain colored"></i></li>
-            <li>GitHub &nbsp;<i class="devicon-github-plain colored"></i></li>
+            <li><i class="devicon-html5-plain-wordmark colored"></i></li>
+            <li><i class="devicon-css3-plain colored"></i></li>
+            <li><i class="devicon-javascript-plain colored"></i></li>
+            <li><i class="devicon-bootstrap-plain colored"></i></li>
+            <li><i class="devicon-react-original colored"></i></li>
+            <li><i class="devicon-nodejs-plain-wordmark colored"></i></li>
+            <li><i class="devicon-npm-original-wordmark colored"></i></li>
+            <li><i class="devicon-vscode-plain colored"></i></li>
+            <li><i class="devicon-github-plain colored"></i></li>
           </ul>
         </div>
       </section>
@@ -285,25 +216,11 @@
           <ul>
             <li>
               <i class="fa-solid fa-trophy text-warning"></i>
-              Google Analytics Certified Developer
-            </li>
-            <li>
-              <i class="fa-solid fa-trophy text-warning"></i>
-              Python for Beginners – The complete Course, Udemy
-            </li>
-            <li>
-              <i class="fa-solid fa-trophy text-warning"></i>
               HTML & CSS – Certification Course for Beginners
             </li>
             <li>
-              <i class="fa-solid fa-trophy text-warning"></i>
-              1<sup>st</sup> Place - University of Colorado Boulder - Adobe
-              Creative Jam 2008 (UI Design Category)
-            </li>
-            <li>
-              <i class="fa-solid fa-trophy text-warning"></i>
-              1<sup>st</sup> Place - University of Colorado Boulder - Adobe
-              Creative Jam 2008 (UI Design Category)
+              <i class="fa-solid fa-trophy text-warning"></i> React JS –
+              Complete Guide for Frontend Web Development
             </li>
           </ul>
         </div>
